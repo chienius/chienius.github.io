@@ -1,0 +1,555 @@
+@import url(http://fonts.useso.com/css?family=Monda|Carrois+Gothic+SC|Rosarivo);
+::selection{
+	background: rgba(126, 124, 114, 0.6);
+	color: #fff;
+}
+::-webkit-selection{
+	background: rgba(126, 124, 114, 0.6);
+	color: #fff;
+}
+::-moz-selection{
+	background: rgba(126, 124, 114, 0.6);
+	color: #fff;
+}
+html, body{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	font-family: "Monda", "华文正黑", "黑体", sans serif;
+}
+.page_wrapper {
+	max-width: 1020px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	overflow: hidden;
+}
+
+
+/* =Top= */
+#top {
+	position: relative;
+	width: 100%;
+	height: 75%;
+	background-image: url('./hero.jpg');
+	background-repeat: no-repeat;
+	background-position: bottom;
+	background-size: cover;
+	display: table;
+}
+#top .top-wrapper {
+	display: table-cell;
+	vertical-align: middle;
+}
+#top h1, #top h3 {
+	text-align: center;
+	font-weight: normal;
+	line-height: 60px;
+	color: #fff;
+}
+#top h1 {
+	font-family: "Rosarivo";
+	font-size: 60px;
+	margin-top: 0;
+	text-shadow: 0 0 30px rgba(11, 5, 45, 1), 1px 2px 5px #d7cd88;
+}
+#top h3 {
+	font-family: 'Carrois Gothic SC';
+	font-weight: bold;
+	text-shadow: 0 0 20px #1a0c6c;
+}
+#top .share {
+	margin: 0 auto;
+	width: 120px;
+}
+
+/* Nav */
+nav {
+	z-index: 10;
+	position: fixed;
+	color: white;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 52px;
+	background: rgba(0, 0, 0, .3);
+	overflow: hidden;
+	transition: background .8s;
+}
+nav.top {
+	background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.02));
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.02))); 
+}
+nav.bottom {
+	position: fixed;
+	top: auto;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: none;
+}
+nav ul {
+	list-style: none;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	height: 52px;
+	margin-left: 30px;
+	font-size: 18px;
+	font-weight: bold;
+	font-family: "Adobe 黑体 Std", "黑体", sans-serif;
+}
+nav.bottom ul {
+	width: 30%;
+	margin-left: 0;
+	text-align: center;
+}
+nav li {
+	display: inline-block;
+	margin-right: 75px;
+	line-height: 52px;
+	width: 80px;
+	text-align: center;
+}
+nav.bottom li {
+	margin-right: 0px;
+}
+nav li a {
+	text-decoration: none;
+	color: inherit;
+	transition: all 1s;
+	height: 52px;
+	display: block;
+}
+nav li a:hover, nav li a.active {
+	background: rgba(255, 255, 255, 0.6);
+	color: black;
+}
+nav footer {
+	position: absolute;
+	right: 20px;
+	top: 0px;
+	height: 52px;
+	line-height: 52px;
+	font-size: 10px;
+}
+nav.bottom footer {
+	color: #000;
+}
+
+
+/* =About= */
+#about {
+	min-height: 700px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	background: #fff;
+}
+#about .desc {
+	width: 800px;
+	height: 65%;
+	display: table;
+}
+#about .desc .container{
+	display: table-cell;
+	height: 100%;
+	vertical-align: middle;
+}
+#about .desc h1, #about .desc h3 {
+	text-align: center;
+	font-weight: normal;
+}
+#about h3 {
+	font-size: 18px;
+}
+#about h1 {
+	font-size: 60px;
+	line-height: 30px;
+	font-family: "Rosarivo";
+	color: #d1cd53;
+	text-shadow: 0, 0, 5px, #f7f744;
+}
+#about .desc p {
+	color: #6b6b6b;
+	font-size: 14px;
+	line-height: 28px;
+}
+#about .ability {
+	position: absolute;
+	bottom: 0px;
+	height: 35%;
+	width: 100%;
+	background-color: #eeeeee;
+}
+#about .ability h3, #about .ability h1 {
+	color: #80b790;
+	font-weight: normal;
+	margin-left: 80px;
+	line-height: 8px;
+}
+#about .ability h3 {
+	font-family: "Carrois Gothic SC";
+	font-size: 12px;
+	margin-top: 30px;
+}
+#about .ability h1 {
+	font-size: 24px;
+}
+#about .ab_box:first-of-type {
+	margin-left: 190px;
+}
+#about .ab_box {
+	height: 80%;
+	width: 120px;
+	color: #d0dcd3;
+	float: left;
+	margin-right: 30px;
+}
+#about .ab_bar_ctn {
+	height: 60%;
+	width: 65px;
+	display: block;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+}
+#about .ab_bar {
+	height: 0;
+	width: 100%;
+	display: block;
+	text-align: center;
+	font-size: 12px;
+	padding-top: 10px;
+	background: rgb(13, 29, 8);
+	background: -moz-linear-gradient(top, rgba(13, 29, 8, 1), rgba(77, 77, 77, 0));
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(13, 29, 8, 1)), to(rgba(77, 77, 77, 0)));
+	position: absolute;
+	bottom:0;
+}
+#about .ab_box h2 {
+	font-size: 12px;
+	text-align: center;
+	color: #000;
+}
+
+
+/* =Works= */
+#works {
+	height: 100%;
+	min-height: 700px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	background-color: #fff;
+	position: relative;
+	overflow: hidden;
+	transition: background-color .5s;
+}
+#works.reverse {
+	background-color: #2c2c2c;
+}
+#works .header {
+	width: 100%;
+	padding-top: 50px;
+	text-align: center;
+	line-height: 12px;
+	position: relative;
+}
+#works .header h3 {
+	font-family: 'Carrois Gothic SC', sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+}
+#works .header h1 {
+	font-size: 48px;
+	font-weight: normal;
+}
+#works .header p {
+	line-height: 28px;
+	font-size: 14px;
+	padding: 30px 50px;
+	text-align: left;
+	color: #9c9c9c;
+}
+#works .wrapper {
+	height: 100%;
+	width: 100%;
+	display: table;
+	position: absolute;
+	top: 0px;
+}
+#works .container {
+	height: 100%;
+	width: 100%;
+	display: table-cell;
+	vertical-align: middle;
+}
+#works .container .box_container {
+	height: 230px;
+}
+#works .item_container {
+	height: 230px;
+	margin: 0 auto;
+	padding-left: 80px;
+	margin-top: 100%;
+}
+#works .item, .prev_btn, .next_btn {
+	color: #fff;
+	width: 220px;
+	height: 220px;
+	border-radius: 110px;
+	float: left;
+	margin-right: 80px;
+	text-align: center;
+	display: inline;
+	background-color: #fff;
+	box-shadow: 2px 2px  5px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	z-index: 4;
+}
+#works .item h1 {
+	font-size: 24px;
+	font-family: 'Monda', sans-serif;
+	font-weight: normal;
+	padding-top: 140px;
+	line-height: 12px;
+	position: relative;
+	z-index: 3;
+}
+#works .item h3 {
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 12px;
+	z-index: 3;
+	position: relative;
+}
+#works img {
+	position: absolute;
+	top: -10px;
+	left: -10px;
+	z-index: 1;
+}
+#works .overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 220px;
+	height: 220px;
+	border-radius: 110px;
+	background-image: url('./ballbg.png');
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	z-index: 2;
+}
+#works .prev_btn, #works .next_btn {
+	position: fixed;
+	background-image: none;
+	background-color: #c2c2c5;
+}
+#works .next_btn {
+	display: none;
+	margin-top: -230px;
+	right: -260px;
+}
+#works .prev_btn {
+	left: -180px;
+	display: none;
+}
+#works .item a {
+	text-decoration: none;
+	color: inherit;
+}
+
+#works .page {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: rgba(204, 204, 204, .7);
+	top: 0;
+	left: 0;
+	z-index: 9;
+	display: none;
+}
+#works .page img{
+	position: absolute;
+	top: 200px;
+	left: 0;
+	height: 50%;
+	box-shadow: 1px 1px 5px #000;
+	z-index: -1;
+	border: 1px #000 solid;
+}
+#works .page .bg {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 150%; 
+	background: none;
+	background: -moz-linear-gradient(right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+	background: -webkit-gradient(linear, right top, left top, from(rgba(255, 255, 255, 1)), to(rgba(255, 255, 255, 0)));
+	z-index: 0;
+	height: 100%;
+	display: block;
+}
+#works .bgoverlay_ctn {
+	position: absolute;
+	bottom: 0px;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+#works .bgoverlay {
+	width: 100000%;
+	height: 100%;
+	background-image: url('./workbg.png');
+	background-repeat: repeat-x;
+	background-position: bottom;
+	border: none;
+	border-radius: 0px;
+}
+#works .page h1 {
+	position: absolute;
+	right: 0px;
+	top: 50px;
+	font-size: 36px;
+	font-weight: normal;
+}
+#works .page h3 {
+	position: absolute;
+	top: 120px;
+	right: 0px;
+	font-size: 18px;
+	font-weight: normal;
+	font-style: italic;
+}
+#works .page dd {
+	position: absolute;
+	top: 220px;
+	right: 0px;
+	font-size: 12px;
+}
+#works .page dd ul{
+	padding: 0;
+	margin-top: 20px;
+	list-style: none;
+	position: relative;
+	z-index: 5;
+}
+#works .page .back_btn {
+	position: absolute;
+	bottom: 50px;
+	left: 20px;
+	color: #fff;
+	padding: 5px;
+	background-color: #444462;
+	transition: .2s linear;
+	z-index: 5;
+}
+#works .page .back_btn:hover {
+	opacity: 0.6;
+}
+#works .page .back_btn a {
+	text-decoration: none;
+	color: inherit;
+}
+#works .page a {
+	color: inherit;
+}
+
+
+/* =Contact= */
+#contact{
+	min-height: 300px;
+	width: 100%;
+	position: relative;
+	height: 35%;
+	overflow: hidden;
+	background-color: #3c3c3c;
+}
+#contact .block1 {
+	width: 30%;
+	background-color: #000;
+	height: 100%;
+	float: left;
+}
+#contact .block2 {
+	float: left;
+}
+#contact .block3 {
+	float: right;
+	width: 190px;
+	height: 100%;
+	background-image: url(./hero.jpg);
+	background-position: bottom left;
+	display: table;
+	cursor: pointer;
+	transition: opacity 2s;
+	opacity: 0.5;
+}
+#contact .block3:hover{
+	opacity: 1;
+}
+#contact .block3 .wrapper {
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	font-family: "Carrois Gothic SC";
+	transform: none;
+	-webkit-transform: none;
+}
+#contact .block3 div {
+	font-size: 15px;
+	margin: 0 auto;
+	height: 15px;
+	position: relative;
+	width: 15px;
+	left: 15px;
+	font-family: "Monda";
+	transform:rotate(90deg) scale(1, 2.5); 
+	-webkit-transform:rotate(90deg) scale(1, 2.5); 
+}
+#contact .header1 {
+	font-family: "华文正黑", "黑体", sans serif;
+	float: left;
+	position: absolute;
+	left: 30px;
+	top: 10px;
+	color: #f9f9da;
+	font-size: 24px;
+	width: 24px;
+}
+#contact .header2 {
+	font-family: "Carrois Gothic SC";
+	float: left;
+	position: absolute;
+	left: 64px;
+	top: 10px;
+	color: #f9f9da;
+	font-size: 12px;
+	width: 10px;
+	word-wrap: break-word;
+}
+#contact .li1, #contact .li2 {
+	float: left;
+	color: #a4bdbc;
+	font-size: 14px;
+	line-height: 24px;
+	margin-top: 62%;
+}
+#contact .li1 {
+	position: relative;
+	left: -100px;
+}
+#contact .li2 {
+	position: relative;
+	left: -50px;
+}
